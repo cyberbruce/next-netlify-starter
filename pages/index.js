@@ -5,22 +5,22 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="mx-auto container">
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className='prose'>
         <Header title="Welcome to my app!" />
-        <p className="description">
+        <p>
           Get started by editing <code>pages/index.js</code>
         </p>
 
 
         <div className="m-2">
 
-          <Link href="/testing">Goto Testing</Link>
+          <Link className='font-medium text-blue-600 dark:text-blue-500 hover:underline' href="/testing">Goto Testing</Link>
         </div>
       </main>
 
